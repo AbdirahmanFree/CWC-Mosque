@@ -4,19 +4,7 @@
 @import "@fontsource-variable/geist";
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-.montserrat-font {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
 
-.cinzel-font {
-  font-family: "Cinzel", serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-}
 
 @custom-variant dark (&:is(.dark *));
 
@@ -131,6 +119,59 @@
     --sidebar-accent-foreground: oklch(0.985 0 0);
     --sidebar-border: oklch(1 0 0 / 10%);
     --sidebar-ring: oklch(0.556 0 0);
+}
+
+.montserrat-font {
+  font-family: "Montserrat", sans-serif;
+ 
+}
+
+.cinzel-font {
+  font-family: "Cinzel", serif;
+}
+
+.gold-bg {
+  background: #C9A13E;
+}
+
+.gold-border {
+  border: 1px solid;
+  border-color: #C9A13E;
+}
+
+.gold-text {
+  color: #C9A13E;
+}
+
+.green-text {
+  color: #153425
+}
+
+.l-green-text {
+  color: #0c492c;
+}
+
+.green-bg {
+  background: #153425;
+}
+
+.underline-text {
+  text-decoration: underline #C9A13E 1px;
+  text-underline-offset: 4px;
+}
+
+@keyframes architectureFloat {
+  0%, 100% {
+    translate: 0 0;
+  }
+
+  50% {
+    translate: 0 -8px;
+  }
+}
+
+.architecture-float {
+  animation: architectureFloat 6s ease-in-out infinite;
 }
 
 @layer base {
