@@ -1,4 +1,5 @@
 import logo from "../assets/logo.png";
+import logo2 from "../assets/logo2.png";
 import {
   FiMail,
   FiPhone,
@@ -11,7 +12,7 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 
-export default function Footer({ theme = "dark" }) {
+export default function Footer({ theme }) {
   const isDark = theme === "dark";
 
   const bg = isDark ? "bg-[#0B2F24]" : "bg-[#FAF7F0]";
@@ -49,7 +50,7 @@ export default function Footer({ theme = "dark" }) {
           {/* Logo + Name */}
           <div className="flex items-center gap-3">
             <img
-              src={logo}
+              src={logo2}
               alt="CWC Logo"
               className="h-14 w-14 shrink-0"
             />
