@@ -16,7 +16,7 @@ export default function Home() {
         className="
           mx-auto
           flex
-          max-w-[1440px]
+          max-w-360
           flex-col
           gap-10
           px-5
@@ -60,7 +60,7 @@ export default function Home() {
           </div>
 
           {/* Gold divider */}
-          <div className="my-6 h-[2px] w-24 bg-[#C9A13E] md:w-32" />
+          <div className="my-6 h-0.5 w-24 bg-[#C9A13E] md:w-32" />
 
           {/* Intro Text */}
           <div
@@ -91,7 +91,7 @@ export default function Home() {
               relative
               mt-8
               w-full
-              max-w-[650px]
+              max-w-162.5
               rounded-xl
               border
               border-[#C9A13E]/40
@@ -112,7 +112,7 @@ export default function Home() {
             <div
               className="
                 absolute
-                -top-[5px]
+                -top-1.25
                 left-1/2
                 h-2.5
                 w-2.5
@@ -188,7 +188,7 @@ export default function Home() {
     className="
       mx-auto
       grid
-      max-w-[1440px]
+      max-w-360
       grid-cols-1
       gap-10
       px-6
@@ -236,7 +236,7 @@ export default function Home() {
         className="
           montserrat-font
           mt-4
-          max-w-[240px]
+          max-w-60
           text-sm
           leading-6
           text-[#C9A13E]
@@ -279,7 +279,7 @@ export default function Home() {
         className="
           montserrat-font
           mt-4
-          max-w-[260px]
+          max-w-65
           text-sm
           leading-6
           text-[#C9A13E]
@@ -322,7 +322,7 @@ export default function Home() {
         className="
           montserrat-font
           mt-4
-          max-w-[270px]
+          max-w-67.5
           text-sm
           leading-6
           text-[#C9A13E]
@@ -362,7 +362,7 @@ export default function Home() {
         className="
           montserrat-font
           mt-4
-          max-w-[250px]
+          max-w-62.5
           text-sm
           leading-6
           text-[#C9A13E]

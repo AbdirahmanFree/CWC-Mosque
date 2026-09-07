@@ -28,7 +28,7 @@ export default function Footer({ theme }) {
       <div
         className="
           mx-auto
-          max-w-[1440px]
+          max-w-360
           px-5
           py-10
           sm:px-8
@@ -105,23 +105,6 @@ export default function Footer({ theme }) {
             >
               <FiMail className={goldText} />
               info@cwcmosque.org
-            </a>
-
-            <a
-              href="tel:+252772275519"
-              className={`
-                flex
-                items-center
-                gap-2
-                text-sm
-                transition-colors
-                duration-200
-                hover:text-[#C9A13E]
-                ${mutedText}
-              `}
-            >
-              <FiPhone className={goldText} />
-              +252 77 227 5519
             </a>
 
             <a

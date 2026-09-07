@@ -110,7 +110,7 @@ export default function Contact() {
           className="
             mx-auto
             grid
-            max-w-[1440px]
+            max-w-360
             grid-cols-1
             gap-8
             px-5
@@ -131,7 +131,7 @@ export default function Contact() {
             {formStatus === "success" ? (
             <div
               role="status"
-              className="flex min-h-[550px] animate-[fadeIn_500ms_ease-out] flex-col items-center justify-center text-center"
+              className="flex min-h-137.5 animate-[fadeIn_500ms_ease-out] flex-col items-center justify-center text-center"
             >
               <div className="relative flex h-24 w-24 items-center justify-center">
                 <div className="absolute inset-0 animate-ping rounded-full bg-[#C9A13E]/20" />
@@ -428,7 +428,7 @@ export default function Contact() {
           className="
             mx-auto
             flex
-            max-w-[1200px]
+            max-w-300
             flex-col
             items-center
             gap-8
@@ -496,15 +496,42 @@ export default function Contact() {
 
 
 
-function FormField({ label, name, required, ...props }) {
+function FormField({ label, name, required, type = "text", ...props }) {
   return (
-    <label>
-      <span className="cinzel-font green-text text-sm tracking-[0.12em]">
+    <label className="block w-full">
+      <span className="cinzel-font green-text block text-sm tracking-[0.12em]">
         {label}
         {required && <span className="text-[#C9A13E]"> *</span>}
       </span>
 
-      <input name={name} required={required} {...props} />
+      <input
+        type={type}
+        name={name}
+        required={required}
+        {...props}
+        className="
+          mt-3
+          w-full
+          rounded-xl
+          border
+          border-[#E4DCCB]
+          bg-[#FFFCF6]
+          px-5
+          py-4
+          text-[#18392D]
+          shadow-sm
+          outline-none
+          transition-all
+          duration-300
+          placeholder:text-[#9A9283]
+          hover:border-[#C9A13E]/70
+          hover:shadow-md
+          focus:border-[#C9A13E]
+          focus:bg-white
+          focus:ring-4
+          focus:ring-[#C9A13E]/10
+        "
+      />
     </label>
   );
 }
