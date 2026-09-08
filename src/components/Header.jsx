@@ -9,11 +9,11 @@ export default function Header({ page }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: "HOME", href: "/" },
+    { label: "HOME", href: "home" },
     { label: "OUR STORY", href: "/our-story" },
-    { label: "PROGRAMMES & SERVICES", href: "/programmes" },
+    { label: "PROGRAMMES & SERVICES", href: "programmes" },
     { label: "PARTNERS", href: "/partners" },
-    { label: "CONTACT", href: "/contact" },
+    { label: "CONTACT", href: "contact" },
   ];
 
   return (
@@ -34,7 +34,7 @@ export default function Header({ page }) {
         className="
           mx-auto
           flex
-          max-w-[1440px]
+          max-w-360
           items-center
           justify-between
           gap-3
@@ -108,12 +108,18 @@ export default function Header({ page }) {
               key={link.href}
               href={link.href}
               className={`
+                relative
                 whitespace-nowrap
+                pb-2
                 text-xs
                 transition-colors
                 duration-200
                 hover:text-[#C9A13E]
-                ${page === link.href ? "underline-text" : ""}
+                ${
+                  page === link.href
+                    ? "text-[#073B2E] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-[#C9A13E]"
+                    : ""
+                }
               `}
             >
               {link.label}

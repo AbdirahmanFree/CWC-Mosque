@@ -172,7 +172,7 @@ function ServiceCard({ item }) {
 export default function Programes() {
   return (
     <div className="min-h-screen bg-[#FFFDF8]">
-      <Header />
+      <Header page="programmes" />
 
       <main className="overflow-hidden text-[#24241F]">
         <ProgrammesHero />

@@ -99,7 +99,7 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen bg-[#FAF7F0]">
-      <Header page="/contact" />
+      <Header page="contact" />
 
       <ContactHero />
 
