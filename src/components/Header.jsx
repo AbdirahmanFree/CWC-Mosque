@@ -10,9 +10,9 @@ export default function Header({ page }) {
 
   const navLinks = [
     { label: "HOME", href: "home" },
-    { label: "OUR STORY", href: "/our-story" },
+    { label: "OUR STORY", href: "our-story" },
     { label: "PROGRAMMES & SERVICES", href: "programmes" },
-    { label: "PARTNERS", href: "/partners" },
+    { label: "PARTNERS", href: "partners" },
     { label: "CONTACT", href: "contact" },
   ];
 
@@ -129,6 +129,7 @@ export default function Header({ page }) {
 
         {/* Desktop CTA */}
         <div className="hidden items-center gap-3 xl:flex">
+          <a href="/partners">
           <button
             className="
               flex
@@ -149,6 +150,7 @@ export default function Header({ page }) {
               PARTNER WITH US
             </span>
           </button>
+          </a>
 
           <button
             className="

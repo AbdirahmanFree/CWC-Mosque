@@ -1,10 +1,13 @@
 import arch1 from "../assets/mainArchitecture.png";
 import Header from "@/components/Header";
 import ArchitectureImage from "@/components/ArchitectureImage";
-import { FiShield } from "react-icons/fi";
-import { FiBook } from "react-icons/fi";
 import { CiHeart } from "react-icons/ci";
 import { PiPlant } from "react-icons/pi";
+import mosque from "../assets/svgs/mosque-image.svg"
+import book from "../assets/svgs/book-open-image.svg"
+import care from "../assets/svgs/hand-heart-image.svg"
+import charity from "../assets/svgs/hand-plant-image.svg"
+
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -36,23 +39,23 @@ export default function Home() {
               className="
                 cinzel-font
                 green-text
-                text-3xl
+                text-2xl
                 leading-tight
-                sm:text-4xl
-                lg:text-5xl
+                sm:text-3xl
+                lg:text-4xl
               "
             >
-              A WAQF FOR ALLAH.
+              A WAQF FOR ALLAH. 
             </h1>
 
             <h1
               className="
                 cinzel-font
                 green-text
-                text-3xl
+                text-2xl
                 leading-tight
-                sm:text-4xl
-                lg:text-5xl
+                sm:text-3xl
+                lg:text-4xl
               "
             >
               A LEGACY FOR GENERATIONS
@@ -211,39 +214,47 @@ export default function Home() {
         items-center
         text-center
         px-6
-
+        gap-2
         lg:border-r
         lg:border-[#C9A13E]/30
       "
     >
-      <FiShield className="mb-4 text-4xl text-[#C9A13E]" />
+      <img src={mosque} className="w-12"/>
+      
+     
+            <h3
+              className="
+                cinzel-font
+                text-lg
+                font-semibold
+                leading-tight
+                text-white
+              "
+            >
+              A PLACE OF
+              <br />
+              WORSHIP
+            </h3>
 
-      <h3
-        className="
-          cinzel-font
-          text-lg
-          font-semibold
-          leading-tight
-          text-white
-        "
-      >
-        A PLACE OF
-        <br />
-        WORSHIP
-      </h3>
-
-      <p
-        className="
-          montserrat-font
-          mt-4
-          max-w-60
-          text-sm
-          leading-6
-          text-[#C9A13E]
-        "
-      >
-        For men, women and children
-      </p>
+            {/* Divider */}
+            <div className="my-1 flex items-center justify-center gap-2">
+              <div className="h-px w-10 bg-[#C9A13E]/60 md:w-12" />
+              <div className="h-1.5 w-1.5 rotate-45 bg-[#C9A13E]" />
+              <div className="h-px w-10 bg-[#C9A13E]/60 md:w-12" />
+            </div>
+              
+            <p
+              className="
+                montserrat-font
+                mt-0
+                max-w-60
+                text-sm
+                leading-6
+                text-white
+              "
+            >
+              For men, women and children
+            </p>
     </div>
 
     {/* Knowledge */}
@@ -254,12 +265,12 @@ export default function Home() {
         items-center
         text-center
         px-6
-
+        gap-2
         lg:border-r
         lg:border-[#C9A13E]/30
       "
     >
-      <FiBook className="mb-4 text-4xl text-[#C9A13E]" />
+      <img src={book} className="w-12"/>
 
       <h3
         className="
@@ -275,14 +286,21 @@ export default function Home() {
         KNOWLEDGE
       </h3>
 
+      {/* Divider */}
+      <div className="my-1 flex items-center justify-center gap-2">
+        <div className="h-px w-10 bg-[#C9A13E]/60 md:w-12" />
+        <div className="h-1.5 w-1.5 rotate-45 bg-[#C9A13E]" />
+        <div className="h-px w-10 bg-[#C9A13E]/60 md:w-12" />
+      </div>
+
       <p
         className="
           montserrat-font
-          mt-4
+          mt-0
           max-w-65
           text-sm
           leading-6
-          text-[#C9A13E]
+          text-white
         "
       >
         Qur’an, Islamic education and resources
@@ -297,12 +315,12 @@ export default function Home() {
         items-center
         text-center
         px-6
-
+        gap-2
         lg:border-r
         lg:border-[#C9A13E]/30
       "
     >
-      <CiHeart className="mb-4 text-5xl text-[#C9A13E]" />
+      <img src={care} className="w-12"/>
 
       <h3
         className="
@@ -318,14 +336,21 @@ export default function Home() {
         ORPHANS
       </h3>
 
+      {/* Divider */}
+      <div className="my-1 flex items-center justify-center gap-2">
+        <div className="h-px w-10 bg-[#C9A13E]/60 md:w-12" />
+        <div className="h-1.5 w-1.5 rotate-45 bg-[#C9A13E]" />
+        <div className="h-px w-10 bg-[#C9A13E]/60 md:w-12" />
+      </div>
+
       <p
         className="
           montserrat-font
-          mt-4
+          mt-0
           max-w-67.5
           text-sm
           leading-6
-          text-[#C9A13E]
+          text-white
         "
       >
         Food, clothing, education and essential support
@@ -340,9 +365,12 @@ export default function Home() {
         items-center
         text-center
         px-6
+        gap-2
+        lg:border-r
+        lg:border-[#C9A13E]/30
       "
     >
-      <PiPlant className="mb-4 text-4xl text-[#C9A13E]" />
+      <img src={charity} className="w-12"/>
 
       <h3
         className="
@@ -358,14 +386,21 @@ export default function Home() {
         JARIYAH
       </h3>
 
+      {/* Divider */}
+      <div className="my-1 flex items-center justify-center gap-2">
+        <div className="h-px w-10 bg-[#C9A13E]/60 md:w-12" />
+        <div className="h-1.5 w-1.5 rotate-45 bg-[#C9A13E]" />
+        <div className="h-px w-10 bg-[#C9A13E]/60 md:w-12" />
+      </div>
+
       <p
         className="
           montserrat-font
-          mt-4
+          mt-0
           max-w-62.5
           text-sm
           leading-6
-          text-[#C9A13E]
+          text-white
         "
       >
         A lasting benefit for generations to come

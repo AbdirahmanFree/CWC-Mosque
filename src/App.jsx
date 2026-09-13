@@ -4,6 +4,8 @@ import Home from './pages/Home'
 import Contact from './pages/Contact'
 import ComingSoon from './pages/ComingSoon'
 import Programes from './pages/Programes'
+import Partners from './pages/Partners'
+import OurStory from './pages/Our-Story'
 
 function App() {
   
@@ -13,9 +15,9 @@ function App() {
       <Routes>
         <Route element={<Home/>} path='/'></Route>
         <Route element={<Contact/>} path='/contact'></Route>
-        <Route element={<ComingSoon/>} path='/our-story'></Route>
+        <Route element={<OurStory/>} path='/our-story'></Route>
         <Route element={<Programes/>} path='/programmes'></Route>
-        <Route element={<ComingSoon/>} path='/partners'></Route>
+        <Route element={<Partners/>} path='/partners'></Route>
         <Route element={<Home/>} path='*'></Route>
         
       </Routes>

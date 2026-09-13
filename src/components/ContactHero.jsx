@@ -57,8 +57,7 @@ export default function ContactHero() {
 
           <p className="mt-5 max-w-115 text-sm leading-7 text-[#1F2925] sm:text-base md:text-[17px]">
             We welcome inquiries, partnership discussions and support from
-            institutions and organizations who share our vision and commitment
-            to benefit generations to come.
+            organizations and individuals who share our vision and commitment.
           </p>
 
           {/* Qur'an card */}

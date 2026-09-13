@@ -26,13 +26,11 @@ export default function ProgrammesHero() {
             <h1
               className="
                 cinzel-font
-                text-3xl
-                font-medium
-                uppercase
+                green-text
+                text-2xl
                 leading-tight
-                text-[#073B2E]
-                sm:text-4xl
-                lg:text-5xl
+                sm:text-3xl
+                lg:text-4xl
               "
             >
               PROGRAMMES &amp;
@@ -41,13 +39,11 @@ export default function ProgrammesHero() {
             <h1
               className="
                 cinzel-font
-                text-3xl
-                font-medium
-                uppercase
+                green-text
+                text-2xl
                 leading-tight
-                text-[#073B2E]
-                sm:text-4xl
-                lg:text-5xl
+                sm:text-3xl
+                lg:text-4xl
               "
             >
               SERVICES

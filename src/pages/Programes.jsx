@@ -1,7 +1,5 @@
 import {
   BookOpen,
-  BookMarked,
-  PersonStanding,
   UserRound,
   Landmark,
   ShoppingBasket,
@@ -10,30 +8,34 @@ import {
   ShowerHead,
 } from "lucide-react";
 
+import { FaFaucetDrip } from "react-icons/fa6";
+
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import hijab from "../assets/hijab.png"
+import books from "../assets/books-image.svg"
 import ProgrammesHero from "@/components/ProgramesHero";
 
 const programmes = [
   {
     title: "QUR’AN LEARNING",
-    description: "Qur’an reading, learning and memorization.",
+    description: "Qur’an recitation, tajweed and memorization.",
     icon: BookOpen,
   },
   {
     title: "ISLAMIC LEARNING",
     description: "Aqeedah, Hadith, Fiqh, Seerah, Du’a & Adhkar and Adaab.",
-    icon: BookMarked,
+    icon: books,
   },
   {
     title: "WOMEN’S PROGRAMMES",
-    description: "Islamic learning, faith and guidance for women.",
-    icon: PersonStanding,
+    description: "Faith, spiritual growth and guidance for women.",
+    icon: hijab,
   },
   {
     title: "YOUTH PROGRAMMES",
     description:
-      "Islamic learning, faith and character development for young people.",
+      "Knowledge, character and spiritual development for young people.",
     icon: UserRound,
   },
   {
@@ -51,7 +53,7 @@ const services = [
   },
   {
     title: "CLOTHING & FOOTWEAR",
-    description: "New clothing and footwear for registered orphans.",
+    description: "New clothing and footwear.",
     icon: Shirt,
   },
   {
@@ -62,7 +64,7 @@ const services = [
   {
     title: "WUDU & FACILITIES",
     description: "Separate facilities for men and women.",
-    icon: ShowerHead,
+    icon: FaFaucetDrip,
   },
 ];
 
@@ -87,7 +89,7 @@ function SectionHeading({ title, description }) {
       <div className="flex items-center justify-center gap-3 sm:gap-4">
         <GoldDivider />
 
-        <h2 className="cinzel-font text-2xl font-semibold text-[#073D2D] sm:text-3xl">
+        <h2 className="cinzel-font text-2xl text-[#073D2D] sm:text-3xl">
           {title}
         </h2>
 
@@ -107,10 +109,19 @@ function ProgrammeCard({ item }) {
   return (
     <article className="group relative flex min-h-61.25 flex-col items-center overflow-hidden px-5 py-6 text-center transition duration-300 hover:bg-[#FFF9EE]">
       <div className="flex h-18 w-18 items-center justify-center rounded-full bg-[#064532] text-white shadow-[0_7px_18px_rgba(7,61,45,0.2)] transition duration-300 group-hover:-translate-y-1 group-hover:shadow-[0_12px_24px_rgba(7,61,45,0.28)]">
-        <Icon size={38} strokeWidth={1.6} />
+        {typeof Icon === "string" ? (
+          <img
+            src={Icon}
+            alt=""
+            aria-hidden="true"
+            className="h-10 w-10 object-contain brightness-0 invert"
+          />
+        ) : (
+          <Icon size={38} strokeWidth={1.6} />
+        )}
       </div>
 
-      <h3 className="mt-4 font-serif text-base font-semibold text-[#123D31]">
+      <h3 className="mt-4 font-serif text-base  text-[#123D31]">
         {item.title}
       </h3>
 
@@ -126,15 +137,6 @@ function ProgrammeCard({ item }) {
         {item.description}
       </p>
 
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-x-0 bottom-0 h-8 opacity-30"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle at 10px 18px, transparent 7px, #D7A955 7.5px, transparent 8.5px)",
-          backgroundSize: "20px 20px",
-        }}
-      />
     </article>
   );
 }
@@ -156,15 +158,6 @@ function ServiceCard({ item }) {
         {item.description}
       </p>
 
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-x-0 bottom-0 h-8 opacity-30"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle at 10px 18px, transparent 7px, #D7A955 7.5px, transparent 8.5px)",
-          backgroundSize: "20px 20px",
-        }}
-      />
     </article>
   );
 }
