@@ -28,12 +28,11 @@ export default function ContactHero() {
           <h1
             className="
               cinzel-font
-              text-3xl
-              font-medium
-              leading-tight
-              text-[#073B2E]
-              sm:text-4xl
-              lg:text-5xl
+                green-text
+                text-2xl
+                leading-tight
+                sm:text-3xl
+                lg:text-4xl
             "
           >
             CONTACT US
