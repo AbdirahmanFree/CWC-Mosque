@@ -152,24 +152,6 @@ export default function Header({ page }) {
           </button>
           </a>
 
-          <button
-            className="
-            flex items-center gap-2
-            border border-[#C9A13E]
-          bg-[#C9A13E]
-          px-4 py-2
-          text-white
-          transition-colors duration-300
-
-          hover:bg-white
-          hover:text-[#C9A13E]
-            "
-          >
-            <CiHeart className="text-xl" />
-            <span className="cinzel-font whitespace-nowrap text-sm">
-              DONATE
-            </span>
-          </button>
         </div>
 
         {/* Mobile / Tablet menu */}
@@ -227,6 +209,9 @@ export default function Header({ page }) {
           ))}
 
           <div className="mt-5 flex flex-col gap-3 sm:flex-row">
+            <a
+              href="/partners"
+            >
             <button
               className="
                 flex
@@ -243,23 +228,9 @@ export default function Header({ page }) {
               <GoPeople />
               <span className="cinzel-font text-sm">PARTNER WITH US</span>
             </button>
+            </a>
 
-            <button
-              className="
-                gold-bg
-                flex
-                flex-1
-                items-center
-                justify-center
-                gap-2
-                px-4
-                py-3
-                text-white
-              "
-            >
-              <CiHeart />
-              <span className="cinzel-font text-sm">DONATE</span>
-            </button>
+           
           </div>
         </nav>
       </div>

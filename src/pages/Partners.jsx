@@ -48,7 +48,7 @@ const reasons = [
 const opportunities = [
   {
     title: "MOSQUE FACILITIES",
-    description: "Construction and and equipping",
+    description: "Construction, materials and equipping",
     icon: Landmark,
   },
   {
@@ -95,9 +95,9 @@ const questions = [
       "The Centre is committed to integrity, openness and trustworthiness. Contributions will be designated for their agreed purpose, with appropriate records and reporting provided to institutional partners.",
   },
   {
-    question: "Can our organisation review the Waqf documentation and project plans?",
+    question: "What stage is the project currently at?",
     answer:
-      "Yes. Relevant project documentation can be made available to prospective institutional partners as part of the partnership discussion and due-diligence process.",
+      "The Waqf land has been secured and the Centre is currently in the development and partnership-building stage. We are engaging organisations that may wish to participate in bringing the vision into reality.",
   },
 ];
 
@@ -243,7 +243,7 @@ export default function Partners() {
     <p className="mt-7 max-w-lg text-base leading-8 text-[#F3EFE7]">
       We seek to partner with organisations that share our values and vision,
       working together to build a centre of worship, knowledge and care that benefits
-      orpahns and the wider community, for the sake of Allah for generations to come.
+      orphans and the wider community, for the sake of Allah for generations to come.
 
     </p>
   </div>

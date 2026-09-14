@@ -144,7 +144,7 @@ export default function Contact() {
                     className="flex items-center gap-3 transition hover:text-[#A96810]"
                   >
                     <FiMail className="shrink-0 text-[#073D2D]" />
-                    <span>fouzia@cwcmosque.org</span>
+                    <span>info@cwcmosque.org</span>
                   </a>
 
                   <div className="flex items-center gap-3">
@@ -184,7 +184,7 @@ export default function Contact() {
                     className="flex items-center gap-3 transition hover:text-[#A96810]"
                   >
                     <FiMail className="shrink-0 text-[#073D2D]" />
-                    <span>khadija@cwcmosque.org</span>
+                    <span>info@cwcmosque.org</span>
                   </a>
 
                   <div className="flex items-center gap-3">
