@@ -94,11 +94,6 @@ const questions = [
     answer:
       "The Centre is committed to integrity, openness and trustworthiness. Contributions will be designated for their agreed purpose, with appropriate records and reporting provided to institutional partners.",
   },
-  {
-    question: "What stage is the project currently at?",
-    answer:
-      "The Waqf land has been secured and the Centre is currently in the development and partnership-building stage. We are engaging organisations that may wish to participate in bringing the vision into reality.",
-  },
 ];
 
 function GoldDivider() {
@@ -351,7 +346,206 @@ export default function Partners() {
           </div>
         </section>
 
-        
+
+       {/* WHERE THE PROJECT STANDS */}
+       <section className="bg-[#F5F0E7] px-5 py-14 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-350">
+          <SectionHeading
+            title="WHERE THE PROJECT STANDS"
+            description="A clear foundation for the next stage of development."
+          />
+
+          <div className="mx-auto mt-10 max-w-5xl">
+            {/* Introduction */}
+            <div className="space-y-5 text-base leading-8 text-[#34342F]">
+              <p>
+                The Centre is currently in its pre-construction and
+                institutional-development stage. The 2,400 m² site in Karaan
+                District, Mogadishu, has already been dedicated as Waqf for the
+                sake of Allah, providing a secure foundation upon which the
+                project can be developed.
+              </p>
+
+              <p>
+                The founder’s original architectural drawings preserve the vision
+                for the mosque, while project planning and governance frameworks
+                have been prepared to support responsible development and
+                institutional due diligence.
+              </p>
+            </div>
+
+            {/* Vertical project stages */}
+            <div className="relative mt-12">
+              {/* Continuous vertical gold line */}
+              <div
+                aria-hidden="true"
+                className="absolute bottom-0 left-1.75 top-0 w-px bg-[#C98B28]/50 sm:left-2.25"
+              />
+
+              <div className="space-y-10">
+                {/* Stage 1 */}
+                <article className="relative pl-10 sm:pl-12">
+                  <span
+                    aria-hidden="true"
+                    className="absolute left-0 top-1.5 h-4 w-4 rotate-45 border border-[#C98B28] bg-[#F5F0E7] sm:left-0.5"
+                  />
+
+                  <h3 className="cinzel-font text-lg text-[#073D2D] sm:text-xl">
+                    WAQF LAND SECURED
+                  </h3>
+
+                  <div
+                    aria-hidden="true"
+                    className="my-3 h-px w-14 bg-[#C98B28]"
+                  />
+
+                  <p className="max-w-4xl text-sm leading-7 text-[#34342F] sm:text-base">
+                    The 2,400 m² site has already been dedicated as Waqf for the
+                    sake of Allah. This means the project can proceed without the
+                    cost of acquiring land.
+                  </p>
+                </article>
+
+                {/* Stage 2 */}
+                <article className="relative pl-10 sm:pl-12">
+                  <span
+                    aria-hidden="true"
+                    className="absolute left-0 top-1.5 h-4 w-4 rotate-45 border border-[#C98B28] bg-[#F5F0E7] sm:left-0.5"
+                  />
+
+                  <h3 className="cinzel-font text-lg text-[#073D2D] sm:text-xl">
+                    FOUNDER’S VISION PRESERVED
+                  </h3>
+
+                  <div
+                    aria-hidden="true"
+                    className="my-3 h-px w-14 bg-[#C98B28]"
+                  />
+
+                  <p className="max-w-4xl text-sm leading-7 text-[#34342F] sm:text-base">
+                    The founder’s original architectural drawings preserve his
+                    early vision for the mosque and provide a meaningful starting
+                    point for the Centre’s development.
+                  </p>
+                </article>
+
+                {/* Stage 3 */}
+                <article className="relative pl-10 sm:pl-12">
+                  <span
+                    aria-hidden="true"
+                    className="absolute left-0 top-1.5 h-4 w-4 rotate-45 border border-[#C98B28] bg-[#F5F0E7] sm:left-0.5"
+                  />
+
+                  <h3 className="cinzel-font text-lg text-[#073D2D] sm:text-xl">
+                    PROJECT FRAMEWORKS PREPARED
+                  </h3>
+
+                  <div
+                    aria-hidden="true"
+                    className="my-3 h-px w-14 bg-[#C98B28]"
+                  />
+
+                  <p className="max-w-4xl text-sm leading-7 text-[#34342F] sm:text-base">
+                    Governance, operational, donor and technical planning
+                    materials have been prepared to support responsible
+                    development and institutional review.
+                  </p>
+                </article>
+
+                {/* Stage 4 */}
+                <article className="relative pl-10 sm:pl-12">
+                  <span
+                    aria-hidden="true"
+                    className="absolute left-0 top-1.5 h-4 w-4 rotate-45 border border-[#C98B28] bg-[#F5F0E7] sm:left-0.5"
+                  />
+
+                  <h3 className="cinzel-font text-lg text-[#073D2D] sm:text-xl">
+                    PROFESSIONAL DESIGN STAGE AHEAD
+                  </h3>
+
+                  <div
+                    aria-hidden="true"
+                    className="my-3 h-px w-14 bg-[#C98B28]"
+                  />
+
+                  <p className="max-w-4xl text-sm leading-7 text-[#34342F] sm:text-base">
+                    Site surveys, final architectural and engineering designs,
+                    regulatory approvals and detailed costing remain to be
+                    completed by qualified professionals.
+                  </p>
+                </article>
+
+                {/* Stage 5 */}
+                <article className="relative pl-10 sm:pl-12">
+                  <span
+                    aria-hidden="true"
+                    className="absolute left-0 top-1.5 h-4 w-4 rotate-45 border border-[#C98B28] bg-[#F5F0E7] sm:left-0.5"
+                  />
+
+                  <h3 className="cinzel-font text-lg text-[#073D2D] sm:text-xl">
+                    PARTNERSHIPS BEING SOUGHT
+                  </h3>
+
+                  <div
+                    aria-hidden="true"
+                    className="my-3 h-px w-14 bg-[#C98B28]"
+                  />
+
+                  <p className="max-w-4xl text-sm leading-7 text-[#34342F] sm:text-base">
+                    The Centre welcomes discussions with organisations interested
+                    in supporting the project as a whole or specific components
+                    and stages of its development.
+                  </p>
+                </article>
+
+                {/* Stage 6 */}
+                <article className="relative pl-10 sm:pl-12">
+                  <span
+                    aria-hidden="true"
+                    className="absolute left-0 top-1.5 h-4 w-4 rotate-45 border border-[#C98B28] bg-[#F5F0E7] sm:left-0.5"
+                  />
+
+                  <h3 className="cinzel-font text-lg text-[#073D2D] sm:text-xl">
+                    PHASED DEVELOPMENT PLANNED
+                  </h3>
+
+                  <div
+                    aria-hidden="true"
+                    className="my-3 h-px w-14 bg-[#C98B28]"
+                  />
+
+                  <p className="max-w-4xl text-sm leading-7 text-[#34342F] sm:text-base">
+                    Construction and programme implementation will advance
+                    responsibly in realistic stages as funding, technical
+                    requirements and necessary approvals permit.
+                  </p>
+                </article>
+              </div>
+            </div>
+
+            {/* Current status notice */}
+            <div className="mt-12 border-y border-[#C98B28]/50 py-8">
+              <p className="text-sm leading-7 text-[#a1a19b] sm:text-base sm:leading-8">
+                Construction has not yet begun, and the Centre is not accepting
+                financial contributions at this stage. Partnership discussions
+                and expressions of interest are welcome while the necessary
+                registration, professional planning, governance and secure
+                financial arrangements are being completed.
+              </p>
+
+              <div
+                aria-hidden="true"
+                className="my-6 h-px w-20 bg-[#C98B28]"
+              />
+
+              <p className="cinzel-font max-w-4xl text-lg leading-8 text-[#073D2D] sm:text-xl">
+                The foundation has been laid through the Waqf. The next step is
+                to bring the vision to life responsibly.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
         {/* WHAT WE CAN BUILD */}
         <section className="px-5 py-14 sm:px-8 lg:px-12">
