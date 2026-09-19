@@ -348,7 +348,7 @@ export default function OurStory() {
                 className="shrink-0 text-[#C87810]"
               />
 
-              <p className="text-base leading-7 text-[#292923]">
+              <p className="text-base leading-7 text-[#292923] pr-4">
                 This Centre is more than a building. It is a trust (amanah) and
                 a means of earning the pleasure of Allah, for today, tomorrow
                 and for those who come after us.
@@ -363,7 +363,7 @@ export default function OurStory() {
                 className="shrink-0 fill-[#C79846] text-[#C79846]"
               />
 
-              <p className="font-serif text-lg leading-8 text-[#292923] text-nowrap">
+              <p className="font-serif text-lg leading-8 text-[#292923] text-nowrap pr-4">
                 A Waqf upon Waqf.
                 <br />
                 A legacy that endures.
