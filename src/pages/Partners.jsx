@@ -614,8 +614,8 @@ export default function Partners() {
                 <Handshake size={40} strokeWidth={1.5} />
               </div>
 
-              <h2 className="cinzel-font mt-6 text-2xl leading-8 text-[#073D2D]">
-                Let’s build a lasting legacy together.
+              <h2 className="cinzel-font mt-6 text-2xl leading-8 text-[#073D2D] text-nowrap">
+                We invite you to be part of this vision.
               </h2>
 
               <div className="my-5 h-px w-20 bg-[#C98B28]" />
@@ -623,9 +623,9 @@ export default function Partners() {
               <p className="leading-7 text-[#34342F]">
                 For the sake of Allah.
                 <br />
-                For our community.
+                For those in need.
                 <br />
-                For lasting benefit.
+                For benefit that continues.
               </p>
             </aside>
           </div>

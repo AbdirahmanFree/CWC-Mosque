@@ -59,11 +59,6 @@ function StoryParagraph({ children }) {
 
 const drawings = [
   {
-    title: "ORIGINAL SITE PLAN",
-    image: sitePlan,
-    alt: "Original site plan for the mosque and Centre",
-  },
-  {
     title: "ORIGINAL FLOOR PLAN",
     image: floorPlan,
     alt: "Original floor plan for the mosque and Centre",
@@ -83,9 +78,9 @@ export default function OurStory() {
       <main>
         {/* OUR STORY INTRODUCTION */}
         <section className="px-5 py-12 sm:px-8 lg:px-12 lg:py-16">
-          <div className="mx-auto grid max-w-360 items-start gap-10 lg:grid-cols-[0.82fr_1.18fr] lg:gap-14">
+          <div className="mx-auto grid max-w-360 items-stretch gap-10 lg:grid-cols-[0.82fr_1.18fr] lg:gap-14">
             {/* LEFT — STORY */}
-            <div>
+            <div className="flex flex-col">
               <h1 className="cinzel-font
                 green-text
                 text-2xl
@@ -137,47 +132,9 @@ export default function OurStory() {
                   lasting benefit for the Ummah. Ameen.
                 </StoryParagraph>
               </div>
-            </div>
-
-            {/* RIGHT — VERSE AND COMMITMENT */}
-            <div className="space-y-7 lg:pt-30">
-              {/* QUR’AN VERSE */}
-              <article className="relative overflow-hidden rounded-2xl border border-[#E4BD78] bg-[#FFFDF8] px-6 py-10 text-center shadow-[0_8px_28px_rgba(53,42,22,0.04)] sm:px-10">
-                <div
-                  aria-hidden="true"
-                  className="absolute bottom-0 left-0 top-0 w-18 border-r border-[#E4BD78]/40 opacity-35"
-                  style={{
-                    backgroundImage:
-                      "radial-gradient(circle at 10px 10px, transparent 5px, #C98B28 5.5px, transparent 6.5px)",
-                    backgroundSize: "20px 20px",
-                  }}
-                />
-
-              <div className="relative pl-12 sm:pl-10">
-                <p
-                  lang="ar"
-                  dir="rtl"
-                  className="font-serif text-3xl font-semibold leading-relaxed text-[#073D2D] sm:text-4xl"
-                >
-                  مَثَلُ الَّذِينَ يُنفِقُونَ أَمْوَالَهُمْ فِي سَبِيلِ اللَّهِ
-                  كَمَثَلِ حَبَّةٍ أَنبَتَتْ سَبْعَ سَنَابِلَ فِي كُلِّ سُنبُلَةٍ
-                  مِّائَةُ حَبَّةٍ ۗ وَاللَّهُ يُضَاعِفُ لِمَن يَشَاءُ ۗ وَاللَّهُ
-                  وَاسِعٌ عَلِيمٌ
-                </p>
-
-                <p className="mt-4 font-serif text-lg leading-7 text-[#292923] sm:text-xl">
-                  “The example of those who spend their wealth in the cause of Allah is
-                  that of a grain that sprouts into seven ears, each bearing one hundred
-                  grains. And Allah multiplies the reward even more to whoever He wills.
-                  For Allah is All-Bountiful, All-Knowing.”
-                </p>
-
-                <p className="mt-3 text-[#4E4A43]">Qur’an 2:261</p>
-              </div>
-              </article>
 
               {/* OUR COMMITMENT */}
-              <article className="group relative min-h-58 overflow-hidden rounded-2xl bg-[#073D2D] px-7 py-9 text-white shadow-[0_14px_35px_rgba(7,61,45,0.18)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_20px_45px_rgba(7,61,45,0.25)] sm:px-10">
+              <article className="group relative mt-8 min-h-58 overflow-hidden rounded-2xl bg-[#073D2D] px-7 py-9 text-white shadow-[0_14px_35px_rgba(7,61,45,0.18)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_20px_45px_rgba(7,61,45,0.25)] sm:px-10 lg:mt-auto">
                 <div
                   aria-hidden="true"
                   className="absolute -bottom-24 -right-20 h-64 w-64 rounded-full bg-[#0B5A42]/60 blur-3xl"
@@ -202,6 +159,107 @@ export default function OurStory() {
                   className="absolute bottom-4 right-5 h-28 w-28 text-[#D78A16] transition duration-500 group-hover:scale-105 sm:right-8 sm:h-32 sm:w-32"
                 />
               </article>
+            </div>
+
+            <div className="flex lg:pt-30">
+              
+              {/* FOUNDER'S LEGACY */}
+              <article
+                className="
+                  relative
+                  flex-1
+                  overflow-hidden
+                  rounded-2xl
+                  border
+                  border-[#E4BD78]
+                  bg-[#FFFDF8]
+                  px-6
+                  py-8
+                  shadow-[0_8px_28px_rgba(53,42,22,0.04)]
+                  sm:px-10
+                  sm:py-10
+                "
+              >
+                {/* Decorative side pattern */}
+                <div
+                  aria-hidden="true"
+                  className="
+                    absolute
+                    inset-y-0
+                    left-0
+                    w-12
+                    border-r
+                    border-[#E4BD78]/40
+                    opacity-35
+                    sm:w-18
+                  "
+                  style={{
+                    backgroundImage:
+                      "radial-gradient(circle at 10px 10px, transparent 5px, #C98B28 5.5px, transparent 6.5px)",
+                    backgroundSize: "20px 20px",
+                  }}
+                />
+
+                <div className="relative pl-8 sm:pl-14">
+                  {/* Heading */}
+                  <div className="text-center">
+                    <h2 className="cinzel-font text-2xl text-[#073D2D] sm:text-3xl">
+                      THE FOUNDER’S LEGACY
+                    </h2>
+
+                    <div
+                      aria-hidden="true"
+                      className="mx-auto mt-4 flex items-center justify-center gap-2"
+                    >
+                      <span className="h-px w-14 bg-[#C98B28]" />
+                      <span className="h-2 w-2 rotate-45 border border-[#C98B28]" />
+                      <span className="h-px w-14 bg-[#C98B28]" />
+                    </div>
+                  </div>
+
+                  {/* Founder’s story */}
+                  <div className="mt-7 space-y-5 text-left font-serif text-base leading-7 text-[#34342F] sm:text-lg sm:leading-8">
+                    <p>
+                      The Cabdirahman Warsame Cilmi Mosque &amp; Orphan Centre honours
+                      the vision and legacy of the late Cabdirahman Warsame Cilmi—a man
+                      remembered for his devotion to Allah, humility, discipline and
+                      service to others.
+                    </p>
+
+                    <p>
+                      He maintained a close relationship with the Qur’an, attended the
+                      mosque faithfully and believed deeply in helping people without
+                      seeking recognition. Although he served his country in positions
+                      of responsibility, including as a Somali Army commander and
+                      Military Attaché in Beijing, he did not wish to be defined by rank
+                      or status. He valued sincerity, fairness, family and quiet acts of
+                      charity.
+                    </p>
+
+                    <p>
+                      His vision was to establish a mosque that would remain a lasting
+                      source of worship and benefit for the community. The original
+                      drawings he left behind preserve that vision and continue to guide
+                      the development of the Centre.
+                    </p>
+
+                    <p>
+                      Today, his family is working to carry this amanah forward by
+                      establishing a mosque-centred Waqf that will provide a welcoming
+                      place of worship, Qur’an and Islamic education, and dignified
+                      support for registered orphan beneficiaries.
+                    </p>
+
+                    <p className="font-medium text-[#073D2D]">
+                      We pray that Allah accepts this Waqf as Sadaqah Jariyah on his
+                      behalf, forgives him, grants him the highest level of Jannah and
+                      allows its benefit to continue for generations. Ameen.
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              
             </div>
           </div>
         </section>
@@ -256,7 +314,7 @@ export default function OurStory() {
               help guide the project forward.
             </p>
 
-            <div className="mt-8 grid gap-5 md:grid-cols-3">
+            <div className="mt-8 grid gap-5 md:grid-cols-2 justify-center">
               {drawings.map((drawing) => (
                 <figure
                   key={drawing.title}
@@ -285,7 +343,7 @@ export default function OurStory() {
             <article className="flex items-center gap-5 px-7 py-8">
               <Flower2
                 aria-hidden="true"
-                size={70}
+                size={35}
                 strokeWidth={1.2}
                 className="shrink-0 text-[#C87810]"
               />
@@ -300,17 +358,17 @@ export default function OurStory() {
             <article className="flex items-center gap-5 border-t border-[#E4BD78] px-7 py-8 md:border-l md:border-t-0">
               <Quote
                 aria-hidden="true"
-                size={70}
+                size={35}
                 strokeWidth={1.3}
                 className="shrink-0 fill-[#C79846] text-[#C79846]"
               />
 
-              <p className="font-serif text-lg leading-8 text-[#292923]">
+              <p className="font-serif text-lg leading-8 text-[#292923] text-nowrap">
                 A Waqf upon Waqf.
                 <br />
-                A legacy that continues.
+                A legacy that endures.
                 <br />
-                A reward that never ends.
+                A reward that we pray continues.
               </p>
             </article>
           </div>

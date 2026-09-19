@@ -174,7 +174,8 @@ export default function Programes() {
         <section className="mx-auto max-w-362.5 px-5 pb-10 pt-12 sm:px-8 lg:px-12 lg:pt-16">
           <SectionHeading
             title="PROGRAMMES"
-            description="Faith, learning and community programmes for the Centre."
+            description="The Centre's planned programmes will provide a welcoming enviroment where people of different ages can strengthen their faith,
+                          deepen their understanding of Islam and develop character guided by Islamic values"
           />
 
           <div className="overflow-hidden rounded-xl border border-[#E4BD78] bg-[#FFFDF8]">
@@ -201,7 +202,8 @@ export default function Programes() {
         <section className="mx-auto max-w-330 px-5 pb-16 pt-2 sm:px-8 lg:px-12 lg:pb-20">
           <SectionHeading
             title="SERVICES"
-            description="Practical support and resources to serve the Centre and support registered orphan beneficiaries."
+            description="The Centre's planned services will provide practical and respectful support for registered orphan
+                          beneficiaries while creating a safe, welcoming and well-equipped enviroment for everyone who visits"
           />
 
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
