@@ -33,7 +33,7 @@ function SectionHeading({ children }) {
     <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
       <GoldDivider />
 
-      <h2 className="cinzel-font text-center text-2xl font-semibold text-[#073D2D] sm:text-3xl">
+      <h2 className="cinzel-font text-center text-2xl  text-[#073D2D] sm:text-3xl">
         {children}
       </h2>
 
@@ -59,12 +59,12 @@ function StoryParagraph({ children }) {
 
 const drawings = [
   {
-    title: "ORIGINAL FLOOR PLAN",
+    title: "Original Floor Plan",
     image: floorPlan,
     alt: "Original floor plan for the mosque and Centre",
   },
   {
-    title: "ORIGINAL ARCHITECTURAL SECTION",
+    title: "Original Architectural Section",
     image: architecturalSection,
     alt: "Original architectural section for the mosque and Centre",
   },
@@ -340,30 +340,32 @@ export default function OurStory() {
         {/* CLOSING WAQF STATEMENT */}
         <section className="px-5 pb-16 sm:px-8 lg:px-12">
           <div className="mx-auto grid max-w-360 overflow-hidden rounded-2xl border border-[#E4BD78] bg-[#FAF7F0] md:grid-cols-2">
-            <article className="flex items-center gap-5 px-7 py-8">
+            {/* Trust statement */}
+            <article className="flex min-w-0 items-start gap-4 px-5 py-7 sm:items-center sm:gap-5 sm:px-7 sm:py-8">
               <Flower2
                 aria-hidden="true"
                 size={35}
                 strokeWidth={1.2}
-                className="shrink-0 text-[#C87810]"
+                className="mt-1 shrink-0 text-[#C87810] sm:mt-0"
               />
 
-              <p className="text-base leading-7 text-[#292923] pr-4">
-                This Centre is more than a building. It is a trust (amanah) and
-                a means of earning the pleasure of Allah, for today, tomorrow
-                and for those who come after us.
+              <p className="min-w-0 text-sm leading-6 text-[#292923] sm:text-base sm:leading-7">
+                This Centre is more than a building. It is a trust (amanah) and a
+                means of earning the pleasure of Allah, for today, tomorrow and for
+                those who come after us.
               </p>
             </article>
 
-            <article className="flex items-center gap-5 border-t border-[#E4BD78] px-7 py-8 md:border-l md:border-t-0">
+            {/* Waqf statement */}
+            <article className="flex min-w-0 items-start gap-4 border-t border-[#E4BD78] px-5 py-7 sm:items-center sm:gap-5 sm:px-7 sm:py-8 md:border-l md:border-t-0">
               <Quote
                 aria-hidden="true"
                 size={35}
                 strokeWidth={1.3}
-                className="shrink-0 fill-[#C79846] text-[#C79846]"
+                className="mt-1 shrink-0 fill-[#C79846] text-[#C79846] sm:mt-0"
               />
 
-              <p className="font-serif text-lg leading-8 text-[#292923] text-nowrap pr-4">
+              <p className="min-w-0 font-serif text-base leading-7 text-[#292923] sm:text-lg sm:leading-8">
                 A Waqf upon Waqf.
                 <br />
                 A legacy that endures.

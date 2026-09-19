@@ -48,27 +48,27 @@ const reasons = [
 const opportunities = [
   {
     title: "MOSQUE FACILITIES",
-    description: "Construction, materials and equipping",
+    description: "Construction, materials and equipping.",
     icon: Landmark,
   },
   {
     title: "QUR’AN LEARNING AND ISLAMIC EDUCATION",
-    description: "Classrooms and learning resources",
+    description: "Learning spaces, teaching materials and educational resources.",
     icon: BookOpen,
   },
   {
     title: "ORPHAN SUPPORT",
-    description: "Essential care and services",
+    description: "Essential care and dignified support services.",
     icon: HeartHandshake,
   },
   {
     title: "COMMUNITY FACILITIES",
-    description: "Wudu, amenities and support spaces",
+    description: "Shared spaces, amenities, landscaping and safe access.",
     icon: HandHeart,
   },
   {
     title: "OPERATIONAL SUPPORT",
-    description: "Programmes and long-term sustainability",
+    description: "Institutional capacity, programme systems and long-term sustainability.",
     icon: Settings,
   },
 ];
@@ -111,19 +111,33 @@ function GoldDivider() {
 
 function SectionHeading({ title, description }) {
   return (
-    <div className="text-center">
-      <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
-        <GoldDivider />
+    <div className="min-w-0 text-center">
+      <div className="flex min-w-0 flex-col items-center justify-center gap-3 sm:flex-row">
+        <div
+          aria-hidden="true"
+          className="flex shrink-0 items-center gap-2"
+        >
+          <span className="h-px w-10 bg-[#C98B28] sm:w-12" />
+          <span className="h-2 w-2 rotate-45 border border-[#C98B28]" />
+          <span className="h-px w-10 bg-[#C98B28] sm:w-12" />
+        </div>
 
-        <h2 className="cinzel-font text-2xl text-[#073D2D] sm:text-3xl">
+        <h2 className="cinzel-font min-w-0 max-w-full break-words text-center text-xl font-semibold leading-tight text-[#073D2D] sm:text-2xl">
           {title}
         </h2>
 
-        <GoldDivider />
+        <div
+          aria-hidden="true"
+          className="hidden shrink-0 items-center gap-2 sm:flex"
+        >
+          <span className="h-px w-12 bg-[#C98B28]" />
+          <span className="h-2 w-2 rotate-45 border border-[#C98B28]" />
+          <span className="h-px w-12 bg-[#C98B28]" />
+        </div>
       </div>
 
       {description && (
-        <p className="mx-auto mt-2 max-w-3xl text-sm leading-6 text-[#34342F] sm:text-base">
+        <p className="mx-auto mt-3 max-w-3xl text-sm leading-6 text-[#5D584F] sm:text-base sm:leading-7">
           {description}
         </p>
       )}
@@ -236,7 +250,7 @@ export default function Partners() {
     </div>
 
     <p className="mt-7 max-w-lg text-base leading-8 text-[#F3EFE7]">
-      We seek to partner with organisations that share our values and vision,
+      We seek to partner with organizations that share our values and vision,
       working together to build a centre of worship, knowledge and care that benefits
       orphans and the wider community, for the sake of Allah for generations to come.
 
@@ -492,7 +506,7 @@ export default function Partners() {
                   />
 
                   <p className="max-w-4xl text-sm leading-7 text-[#34342F] sm:text-base">
-                    The Centre welcomes discussions with organisations interested
+                    The Centre welcomes discussions with organizations interested
                     in supporting the project as a whole or specific components
                     and stages of its development.
                   </p>
@@ -552,7 +566,8 @@ export default function Partners() {
           <div className="mx-auto max-w-350">
             <SectionHeading
               title="WHAT WE CAN BUILD TOGETHER"
-              description="Partnerships can support different aspects of the Centre, including:"
+              description="The Centre's vision offers opportunities for partners to support distinct facilities,
+                            programmes and services, including:"
             />
 
             <div className="mt-8 grid gap-2 sm:grid-cols-2 lg:grid-cols-5 lg:divide-x lg:divide-[#D6A746]/50">
@@ -565,28 +580,30 @@ export default function Partners() {
 
         {/* QUESTIONS */}
         <section className="px-5 pb-16 sm:px-8 lg:px-12">
-          <div className="mx-auto grid max-w-350 gap-6 lg:grid-cols-[1.5fr_0.7fr]">
-            <div className="rounded-2xl border border-[#E8C98F] bg-[#F5F0E7] p-6 sm:p-8">
+          <div className="mx-auto grid min-w-0 max-w-350 gap-6 lg:grid-cols-[1.5fr_0.7fr]">
+            {/* Questions */}
+            <div className="min-w-0 overflow-hidden rounded-2xl border border-[#E8C98F] bg-[#F5F0E7] p-5 sm:p-8">
               <SectionHeading title="PARTNERSHIP QUESTIONS" />
 
               <div className="mt-7 space-y-3">
                 {questions.map((item, index) => (
                   <div
                     key={item.question}
-                    className="overflow-hidden rounded-lg border border-[#E8DECA] bg-[#FFFDF8]"
+                    className="min-w-0 overflow-hidden rounded-lg border border-[#E8DECA] bg-[#FFFDF8]"
                   >
                     <button
                       type="button"
                       aria-expanded={openQuestion === index}
                       onClick={() => toggleQuestion(index)}
-                      className="group flex w-full items-center justify-between gap-5 px-5 py-4 text-left"
+                      className="group flex w-full min-w-0 items-center justify-between gap-3 px-4 py-4 text-left sm:gap-5 sm:px-5"
                     >
-                      <span className="font-medium text-[#27342E]">
+                      <span className="min-w-0 flex-1 break-words text-sm font-medium leading-6 text-[#27342E] sm:text-base">
                         {item.question}
                       </span>
 
                       <Plus
                         size={20}
+                        aria-hidden="true"
                         className={`shrink-0 text-[#A96810] transition duration-300 ${
                           openQuestion === index ? "rotate-45" : ""
                         }`}
@@ -596,11 +613,11 @@ export default function Partners() {
                     <div
                       className={`overflow-hidden transition-all duration-300 ${
                         openQuestion === index
-                          ? "max-h-60 opacity-100"
+                          ? "max-h-96 opacity-100"
                           : "max-h-0 opacity-0"
                       }`}
                     >
-                      <p className="border-t border-[#E8DECA] px-5 py-4 text-sm leading-7 text-[#5D584F]">
+                      <p className="break-words border-t border-[#E8DECA] px-4 py-4 text-sm leading-7 text-[#5D584F] sm:px-5">
                         {item.answer}
                       </p>
                     </div>
@@ -609,18 +626,22 @@ export default function Partners() {
               </div>
             </div>
 
-            <aside className="flex flex-col items-center justify-center rounded-2xl border border-[#E8C98F] bg-[#FFFDF8] px-7 py-10 text-center">
-              <div className="flex h-20 w-20 items-center justify-center rounded-full bg-[#073D2D] text-[#D6A746]">
-                <Handshake size={40} strokeWidth={1.5} />
+            {/* Invitation */}
+            <aside className="flex min-w-0 flex-col items-center justify-center overflow-hidden rounded-2xl border border-[#E8C98F] bg-[#FFFDF8] px-5 py-10 text-center sm:px-7">
+              <div className="flex h-18 w-18 shrink-0 items-center justify-center rounded-full bg-[#073D2D] text-[#D6A746] sm:h-20 sm:w-20">
+                <Handshake size={36} strokeWidth={1.5} />
               </div>
 
-              <h2 className="cinzel-font mt-6 text-2xl leading-8 text-[#073D2D] text-nowrap">
+              <h2 className="cinzel-font mt-6 max-w-full break-words text-xl leading-8 text-[#073D2D] sm:text-2xl">
                 We invite you to be part of this vision.
               </h2>
 
-              <div className="my-5 h-px w-20 bg-[#C98B28]" />
+              <div
+                aria-hidden="true"
+                className="my-5 h-px w-20 bg-[#C98B28]"
+              />
 
-              <p className="leading-7 text-[#34342F]">
+              <p className="text-sm leading-7 text-[#34342F] sm:text-base">
                 For the sake of Allah.
                 <br />
                 For those in need.
