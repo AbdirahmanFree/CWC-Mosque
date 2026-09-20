@@ -68,6 +68,12 @@ function ContactItem({ icon: Icon, title, children, href }) {
 
 export default function Contact() {
   return (
+    <>
+    <SEO
+      title="Contact the Waqf"
+      description="Contact the Ambassadors of the Cabdirahman Warsame Cilmi Mosque & Orphan Centre regarding the Waqf and institutional partnership opportunities."
+      path="/contact"
+    />
     <div className="min-h-screen bg-[#FAF7F0]">
       <Header page="contact" />
 
@@ -201,5 +207,6 @@ export default function Contact() {
 
       <Footer theme="dark" />
     </div>
+    </>
   );
 }

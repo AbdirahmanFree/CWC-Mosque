@@ -14,6 +14,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import hijab from "../assets/hijab.png"
 import books from "../assets/books-image.svg"
+import SEO from "../components/SEO";
 import ProgrammesHero from "@/components/ProgramesHero";
 
 const programmes = [
@@ -164,6 +165,12 @@ function ServiceCard({ item }) {
 
 export default function Programes() {
   return (
+    <>
+    <SEO
+      title="Programmes and Services"
+      description="Explore the planned faith, learning and support programmes of the Cabdirahman Warsame Cilmi Mosque & Orphan Centre in Mogadishu."
+      path="/programmes"
+    />
     <div className="min-h-screen bg-[#FFFDF8]">
       <Header page="programmes" />
 
@@ -174,8 +181,9 @@ export default function Programes() {
         <section className="mx-auto max-w-362.5 px-5 pb-10 pt-12 sm:px-8 lg:px-12 lg:pt-16">
           <SectionHeading
             title="PROGRAMMES"
-            description="The Centre's planned programmes will provide a welcoming enviroment where people of different ages can strengthen their faith,
-                          deepen their understanding of Islam and develop character guided by Islamic values"
+            description="The Centre's planned programmes will provide a welcoming environment
+                          where people of different ages can strengthen their faith, deepen their
+                          understanding of Islam and develop character guided by Islamic values."
           />
 
           <div className="overflow-hidden rounded-xl border border-[#E4BD78] bg-[#FFFDF8]">
@@ -202,8 +210,9 @@ export default function Programes() {
         <section className="mx-auto max-w-330 px-5 pb-16 pt-2 sm:px-8 lg:px-12 lg:pb-20">
           <SectionHeading
             title="SERVICES"
-            description="The Centre's planned services will provide practical and respectful support for registered orphan
-                          beneficiaries while creating a safe, welcoming and well-equipped enviroment for everyone who visits"
+            description="The Centre's planned services will provide practical and respectful
+                        support for registered orphan beneficiaries while creating a safe,
+                        welcoming and well-equipped environment for everyone who visits."
           />
 
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -216,5 +225,6 @@ export default function Programes() {
 
       <Footer />
     </div>
+    </>
   );
 }

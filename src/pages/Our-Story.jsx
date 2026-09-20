@@ -8,7 +8,7 @@ import {
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-
+import SEO from "../components/SEO";
 import sitePlan from "../assets/ogSitePlan.png";
 import floorPlan from "../assets/ogFloorPlan.png";
 import architecturalSection from "../assets/ogarchsect.png";
@@ -72,6 +72,12 @@ const drawings = [
 
 export default function OurStory() {
   return (
+    <>
+    <SEO
+      title="Our Story and Founder’s Legacy"
+      description="Discover the vision and legacy of Cabdirahman Warsame Cilmi and the mosque-centred Waqf being established in Mogadishu for worship, knowledge and care."
+      path="/our-story"
+    />
     <div className="min-h-screen bg-[#FFFDF8]">
       <Header page="our-story" />
 
@@ -379,5 +385,6 @@ export default function OurStory() {
 
       <Footer />
     </div>
+    </>
   );
 }

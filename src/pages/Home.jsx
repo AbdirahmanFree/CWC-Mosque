@@ -7,11 +7,18 @@ import mosque from "../assets/svgs/mosque-image.svg"
 import book from "../assets/svgs/book-open-image.svg"
 import care from "../assets/svgs/hand-heart-image.svg"
 import charity from "../assets/svgs/hand-plant-image.svg"
+import SEO from "../components/SEO";
 
 import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
+    <>
+    <SEO
+        title="Mosque & Orphan Centre in Mogadishu"
+        description="A mosque-centred Waqf in Mogadishu dedicated to worship, Qur’an and Islamic education, and dignified support for registered orphan beneficiaries."
+        path="/"
+      />
     <div className="min-h-screen bg-[#FAF7F0]">
       <Header page="home" />
 
@@ -410,5 +417,6 @@ export default function Home() {
   <Footer theme="light"/>
 </div>
     </div>
+  </>
   );
 }

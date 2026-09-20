@@ -16,7 +16,7 @@ import {
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import partnersHero from "../assets/partners-hero.png";
+import SEO from "../components/SEO";
 
 const reasons = [
   {
@@ -194,6 +194,12 @@ export default function Partners() {
   };
 
   return (
+    <>
+    <SEO
+      title="Partnership Opportunities"
+      description="Learn about the Waqf land, current project stage and opportunities to support the development of the CWC Mosque & Orphan Centre in Mogadishu."
+      path="/partners"
+    />
     <div className="min-h-screen bg-[#FFFDF8]">
       <Header page="partners" />
 
@@ -655,5 +661,6 @@ export default function Partners() {
 
       <Footer />
     </div>
+    </>
   );
 }
