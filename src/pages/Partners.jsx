@@ -80,14 +80,14 @@ const questions = [
       "Yes. The 2,400 m² site in Karaan District, Mogadishu, has already been dedicated as Waqf for the sake of Allah. This allows partners to support the development of the Centre without the cost of acquiring land.",
   },
   {
-    question: "What can our organisation support?",
+    question: "What can our organization support?",
     answer:
       "Partners may support the Centre as a whole or specific areas, including mosque facilities, Qur’an and Islamic education, orphan support services, community facilities, equipment and operational needs.",
   },
   {
     question: "Can we fund a specific part of the project?",
     answer:
-      "Yes. We welcome partnerships for specific components or phases of the Centre. We can discuss your organisation’s priorities and identify an appropriate area of support.",
+      "Yes. We welcome partnerships for specific components or phases of the Centre. We can discuss your organization’s priorities and identify an appropriate area of support.",
   },
   {
     question: "How will our contribution be managed and accounted for?",

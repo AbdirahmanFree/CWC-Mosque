@@ -372,7 +372,7 @@ export default function OurStory() {
               />
 
               <p className="min-w-0 font-serif text-base leading-7 text-[#292923] sm:text-lg sm:leading-8">
-                A Waqf upon Waqf.
+                A vision built upon Waqf.
                 <br />
                 A legacy that endures.
                 <br />
