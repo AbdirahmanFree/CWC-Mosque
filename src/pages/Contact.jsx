@@ -9,6 +9,7 @@ import {
   FiMapPin,
   FiPhone,
 } from "react-icons/fi";
+import SEO from "@/components/SEO";
 
 function GoldDivider() {
   return (
